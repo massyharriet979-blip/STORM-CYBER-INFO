@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STORM CYBER MD - About</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--accent:#5ee9a8;--muted:#8aa89a;--text:#e8f3ec;--bg:#060a08}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;overflow-x:hidden;min-height:100vh}
+body.theme-pink{--accent:#ff2e7a;--muted:#d9a0b8;--bg:#14060f}
+body.theme-yellowpurple{--accent:#ffd828;--muted:#c9b8e0;--bg:#12081a}
+body.theme-orangeblack{--accent:#ff7800;--muted:#d8b896;--bg:#0f0800}
+body.appear-glow h1{text-shadow:0 0 22px var(--accent)}
+body.appear-clean h1{text-shadow:none;letter-spacing:0}
+body.appear-neon h1{text-shadow:0 0 30px var(--accent),0 0 60px var(--accent)}
+body.appear-neon .free span{box-shadow:0 0 20px var(--accent)}
+.mono{font-family:'JetBrains Mono',monospace}
+.header{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:rgba(6,10,8,0.75);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,0.08)}
+.logo{font-weight:700;font-size:15px}
+.header-right{display:flex;gap:6px}
+.menu-wrap{position:relative}
+.menu-btn{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.menu{display:none;position:absolute;right:0;top:38px;background:#0d1f15;border:1px solid rgba(255,255,255,0.12);border-radius:14px;overflow:hidden;min-width:180px;z-index:30}
+.menu.open{display:block}
+.menu .label{padding:9px 13px 2px;font-size:10px;letter-spacing:0.14em;color:#8aa89a;font-family:'JetBrains Mono',monospace}
+.menu button{display:block;width:100%;text-align:left;padding:10px 13px;background:none;border:none;color:#fff;font-size:13px;cursor:pointer}
+.menu button:hover{background:rgba(255,255,255,0.08)}
+.wrap{max-width:580px;margin:0 auto;padding:28px 18px 40px}
+.top{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;color:var(--accent);text-align:center;margin-bottom:10px}
+h1{font-size:clamp(36px,10vw,52px);line-height:0.92;font-weight:800;text-align:center}
+h1 span{display:block;color:var(--accent)}
+p{color:var(--muted);font-size:14.5px;line-height:1.75;margin-top:14px}
+p b{color:var(--text)}
+.free{text-align:center;margin:16px 0}
+.free span{display:inline-block;background:rgba(255,255,255,0.06);border:1px solid var(--accent);padding:9px 16px;border-radius:20px;font-size:12.5px;color:var(--text)}
+.footer{text-align:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#6b8a7a;line-height:1.8;margin-top:24px;border-top:1px solid rgba(255,255,255,0.07);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo">STORM CYBER MD</div>
+<div class="header-right">
+<div class="menu-wrap">
+<button class="menu-btn" onclick="toggleMenu('colorMenu',event)">🎨</button>
+<div class="menu" id="colorMenu">
+<div class="label">COLOUR</div>
+<button onclick="setTheme('green')">🟢 Green</button>
+<button onclick="setTheme('pink')">🌸 Red & Pink</button>
+<button onclick="setTheme('yellowpurple')">🟡 Yellow & Purple</button>
+<button onclick="setTheme('orangeblack')">🟠 Orange & Black</button>
+</div>
+</div>
+<div class="menu-wrap">
+<button class="menu-btn" onclick="toggleMenu('appearMenu',event)">✨</button>
+<div class="menu" id="appearMenu">
+<div class="label">APPEARANCE</div>
+<button onclick="setAppearance('normal')">🌑 Original Dark</button>
+<button onclick="setAppearance('glow')">✨ Glow</button>
+<button onclick="setAppearance('clean')">🤍 Clean</button>
+<button onclick="setAppearance('neon')">⚡ Neon</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wrap">
+<div class="top">ABOUT THE BOT</div>
+<h1>STORM<br><span>CYBER MD</span></h1>
+<div class="free"><span>🎁 FREE OF CHARGE — No payment</span></div>
+<p><b>STORM CYBER MD is a Multi-Device WhatsApp Bot built on Baileys.</b> It runs on the WhatsApp Multi-Device protocol, so it stays connected without needing a phone to stay online. It is built for speed, stability, and long sessions. Once linked, it lives inside WhatsApp and works directly where groups and chats already are.</p>
+<p>Baileys gives it a real WhatsApp connection. It can read messages, reply fast, manage group activity, and handle media, stickers, and downloads. It is lightweight, it does not need a heavy server, and it is made to run 24/7. It is a modern MD bot, not an old QR-only bot. It is clean, fast, and built for everyday use.</p>
+<p>STORM CYBER MD was created by STORM X to give WhatsApp groups a powerful, modern bot that anyone can use. It is simple to understand, easy to run, and made for real WhatsApp users. It is free of charge for everyone. This is a Baileys MD bot, built for WhatsApp, built for groups, built for the future.</p>
+<div class="footer">FREE OF CHARGE • NO PAYMENT<br>BAILEYS • MULTI-DEVICE • WHATSAPP BOT<br>UGANDA 🇺🇬</div>
+</div>
+
+<script>
+function toggleMenu(id,e){e.stopPropagation();document.querySelectorAll('.menu').forEach(m=>{if(m.id!==id)m.classList.remove('open')});document.getElementById(id).classList.toggle('open')}
+document.addEventListener('click',()=>{document.querySelectorAll('.menu').forEach(m=>m.classList.remove('open'))});
+function setTheme(t){document.body.classList.remove('theme-pink','theme-yellowpurple','theme-orangeblack');if(t==='pink')document.body.classList.add('theme-pink');if(t==='yellowpurple')document.body.classList.add('theme-yellowpurple');if(t==='orangeblack')document.body.classList.add('theme-orangeblack');document.querySelectorAll('.menu').forEach(m=>m.classList.remove('open'))}
+function setAppearance(a){document.body.classList.remove('appear-glow','appear-clean','appear-neon');if(a==='glow')document.body.classList.add('appear-glow');if(a==='clean')document.body.classList.add('appear-clean');if(a==='neon')document.body.classList.add('appear-neon');document.querySelectorAll('.menu').forEach(m=>m.classList.remove('open'))}
+</script>
+</body>
+</html>
