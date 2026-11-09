@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STORM CYBER MD - Bot Info</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#060a08;color:#e8f3ec;font-family:'Space Grotesk',sans-serif;overflow:hidden;height:100vh;height:100dvh}
+.mono{font-family:'JetBrains Mono',monospace}
+/* 55 GLOWING DOTS ONLY - NO IMAGE */
+#starsMove{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.mstar{position:absolute;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px #5ee9a8,0 0 18px 4px #5ee9a8;animation:starFloat linear infinite}
+@keyframes starFloat{0%{transform:translateY(0) translateX(0);opacity:0.3}50%{transform:translateY(-35px) translateX(15px);opacity:1}100%{transform:translateY(15px) translateX(-10px);opacity:0.4}}
+.wrap{max-width:520px;margin:0 auto;padding:20px 18px;height:100vh;height:100dvh;display:flex;flex-direction:column;justify-content:center;text-align:center;position:relative;z-index:1}
+.top{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;color:#5ee9a8;margin-bottom:14px}
+h1{font-size:clamp(38px,11vw,54px);line-height:0.9;font-weight:800;letter-spacing:-0.03em}
+h1 span{display:block;color:#5ee9a8;text-shadow:0 0 22px #5ee9a8;font-weight:600}
+p{color:#8aa89a;font-size:14.5px;line-height:1.7;margin:14px auto 0;max-width:420px}
+p b{color:#fff}
+.free{margin-top:16px;display:inline-block;background:rgba(94,233,168,0.1);border:1px solid rgba(94,233,168,0.22);padding:9px 16px;border-radius:20px;font-size:12.5px;color:#a8d9b8}
+.by{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#6b8a7a;line-height:1.8}
+</style>
+</head>
+<body>
+<div id="starsMove"></div>
+
+<div class="wrap">
+<div class="top">STORM CYBER MD</div>
+<h1>STORM<br><span>CYBER MD</span></h1>
+<p><b>A WhatsApp bot that protects your group.</b><br><br>It keeps your group safe and clean, day and night. Made for where people live — WhatsApp.<br><br>Made by <b>STORM X</b> from Uganda.</p>
+<div><span class="free">🎁 FREE OF CHARGE — No payment</span></div>
+<div class="by">FREE • NO PAYMENT<br>MADE BY STORM X • UGANDA 🇺🇬</div>
+</div>
+
+<script>
+// 55 GLOWING DOTS
+(function(){const wrap=document.getElementById('starsMove');for(let i=0;i<55;i++){const s=document.createElement('div');s.className='mstar';let size=5+Math.random()*5;s.style.width=size+'px';s.style.height=size+'px';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.opacity=0.5+Math.random()*0.5;s.style.animationDuration=(6+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*8)+'s';wrap.appendChild(s)}})();
+</script>
+</body>
+</html>
